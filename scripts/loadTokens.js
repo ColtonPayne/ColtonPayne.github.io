@@ -10,7 +10,7 @@ window.addEventListener('m-authenticated', async (event) => {
     h2.innerHTML = "Your NFTs";
     document.getElementById("nfts").appendChild(document.createElement("h2"))
     // Create a div element for each token you own
-    for (let i = 0; i < tokens.length; i++) {
+    for (let i = 1; i < 3; i++) {
         const img = document.createElement("img");
         var ipfsLink = tokens[i].image;
         var prefix = 'https';
