@@ -23,13 +23,16 @@
             document.getElementById("nfts").appendChild(document.createElement("h2"))
             // Create a div element for each token you own
             for (let i = 0; i < tokens.length; i++) {
-                //const img = document.createElement("img");
-                //img.src = tokens[i].image;
-                //img.height = 200;
-                //img.width = 200;
-                //document.getElementById("nfts").appendChild(img);
+                const img = document.createElement("img");
+                img.src = tokens[i].image;
+                img.height = 200;
+                img.width = 200;
+                document.getElementById("nfts").appendChild(img);
+                const TID = document.createElement("h2");
+                TID.innerHTML = tokens[i].tokenID;
+                document.getElementById("nfts").appendChild(TID);
                 const md = document.createElement("h2");
-                md.innerHTML = tokens[i].metadata;
+                md.innerHTML = tokens[i].metadata.attributes;
                 document.getElementById("nfts").appendChild(md);
             }
         })
@@ -50,7 +53,7 @@
         </nav>
 
         <div class="text-box">
-            <h1>NFT Showcase3</h1>
+            <h1>NFT Showcase4</h1>
             <p>Showcase Your NFTs Here</p>
             <div id="nfts"></div>
             </div>
