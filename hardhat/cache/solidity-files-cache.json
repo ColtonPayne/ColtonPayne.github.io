@@ -1,0 +1,75 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/justin/Desktop/PropelVenturesLLCNFT/Propel-Ventures-LLC-State-Wide-NFT/contracts/Token.sol": {
+      "lastModificationDate": 1666339620364,
+      "contentHash": "4cf33eabad5f4e50ff62d739f2193096",
+      "sourceName": "contracts/Token.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "Token"
+      ]
+    },
+    "/home/justin/Desktop/PropelVenturesLLCNFT/Propel-Ventures-LLC-State-Wide-NFT/contracts/PROPEL.sol": {
+      "lastModificationDate": 1666342420258,
+      "contentHash": "0e9b2bfd478ba1a34643dead1cba1779",
+      "sourceName": "contracts/PROPEL.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "PROPEL"
+      ]
+    }
+  }
+}
