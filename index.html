@@ -24,12 +24,12 @@
             // Create a div element for each token you own
             for (let i = 0; i < tokens.length; i++) {
                 const img = document.createElement("img");
-                img.src = tokens[i].image;
-                img.height = 200;
-                img.width = 200;
-                document.getElementById("nfts").appendChild(img);
+                //img.src = tokens[i].image;
+                //img.height = 200;
+                //img.width = 200;
+                //document.getElementById("nfts").appendChild(img);
                 const metadata = tokens[i].metadata;
-                document.getElementById("nfts").appendChild(img);
+                document.getElementById("nfts").appendChild(metadata);
             }
         })
         window.addEventListener('m-unauthenticated', async (event) => {
@@ -49,7 +49,7 @@
         </nav>
 
         <div class="text-box">
-            <h1>NFT Showcase1</h1>
+            <h1>NFT Showcase2</h1>
             <p>Showcase Your NFTs Here</p>
             <div id="nfts"></div>
             </div>
