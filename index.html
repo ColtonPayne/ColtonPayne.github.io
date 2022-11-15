@@ -22,9 +22,13 @@
             h2.innerHTML = "Your NFTs";
             document.getElementById("nfts").appendChild(document.createElement("h2"))
             // Create a div element for each token you own
-            for (let i = 0; i < tokens.length; i++) {
+            for (let i = 2; i < 3; i++) {
                 const img = document.createElement("img");
-                img.src = tokens[i].image;
+                var ipfsLink = tokens[i].image;
+                var prefix = 'https';
+                var uri = ipfsLink.substring(4, ipfsLink.length - 14);
+                var suffix = '.ipfs.nftstorage.link/metadata.json';
+                img.src = prefix + uri + suffix;
                 img.height = 200;
                 img.width = 200;
                 document.getElementById("nfts").appendChild(img);
@@ -53,7 +57,7 @@
         </nav>
 
         <div class="text-box">
-            <h1>NFT Showcase5</h1>
+            <h1>NFT Showcase6</h1>
             <p>Showcase Your NFTs Here</p>
             <div id="nfts"></div>
             </div>
