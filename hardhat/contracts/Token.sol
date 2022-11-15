@@ -21,9 +21,9 @@ contract Token is AdminControl, ICreatorExtensionTokenURI{
 
     mapping(uint256 => string) public URIMap;
 
-    function initialize(address core) public adminRequired {
+    function initialize(address core, string memory uri) public adminRequired {
       _core = core;
-      IERC721CreatorCore(_core).mintExtension(msg.sender);
+      IERC721CreatorCore(_core).mintExtension(msg.sender, uri);
     }
 
     function supportsInterface(bytes4 interfaceId) public view virtual override(AdminControl, IERC165) returns (bool) {

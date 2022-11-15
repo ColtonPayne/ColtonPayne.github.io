@@ -1,13 +1,12 @@
 const { NFTStorage } = require('nft.storage')
-var XMLHttpRequest = require('xhr2');
 
 // read the API key from an environment variable. You'll need to set this before running the example!
 const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDBDNjZDM0Y0N2MyQ0Q0NjY1OEU0ZjdEYTAxNjY1MTBFQTNGY0JGMjAiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY2NzE2Njk0NjgxMCwibmFtZSI6IkNvbHRvbktleSJ9.j5tMZf9UjLq9uo8TAnjoGAFZCeet4l1P4v0mUP9qe0I';
 var _firstURI;
 var _secondURI;
 
-const coreAddress = '0xf3a013252d45D8B4226c79E21ca6e11Ce155B8B9';
-const extensionAddres = '0x2933BC7D948fc18cD86d402e4251731eA6eC5177';
+const coreAddress = '0x76faD803D254d2c0b8EE2Fd2e5Fb2202FB0100E6';
+const extensionAddres = '0xb5Ff378c12a5876eF68b7b6EfAaB2e6C534294d9';
 
 
 async function main(){
