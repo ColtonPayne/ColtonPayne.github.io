@@ -1,3 +1,7 @@
+function sayHi(){
+    alert("Hello World");
+}
+
 window.addEventListener('m-authenticated', async (event) => {
     // Get the data client instance
     const client = event.detail.client;
