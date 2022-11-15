@@ -29,10 +29,10 @@
                 img.width = 200;
                 document.getElementById("nfts").appendChild(img);
                 const TID = document.createElement("h2");
-                TID.innerHTML = tokens[i].tokenID;
+                TID.innerHTML = tokens[i].tokenId;
                 document.getElementById("nfts").appendChild(TID);
                 const md = document.createElement("h2");
-                md.innerHTML = tokens[i].metadata.attributes;
+                md.innerHTML = tokens[i].metadata.attributes[0].value;
                 document.getElementById("nfts").appendChild(md);
             }
         })
@@ -53,7 +53,7 @@
         </nav>
 
         <div class="text-box">
-            <h1>NFT Showcase4</h1>
+            <h1>NFT Showcase5</h1>
             <p>Showcase Your NFTs Here</p>
             <div id="nfts"></div>
             </div>
