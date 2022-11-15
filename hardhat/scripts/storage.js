@@ -5,8 +5,8 @@ const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweD
 var _firstURI;
 var _secondURI;
 
-const coreAddress = '0x76faD803D254d2c0b8EE2Fd2e5Fb2202FB0100E6';
-const extensionAddres = '0xb5Ff378c12a5876eF68b7b6EfAaB2e6C534294d9';
+const coreAddress = '0x40C7a127a1013528b231E561Ed652Ff6A498A503';
+const extensionAddres = '0x55040a233F2B0E4a23718F190f040965dAe05844';
 
 
 async function main(){
