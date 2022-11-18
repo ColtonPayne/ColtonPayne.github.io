@@ -81,6 +81,7 @@ async function getExampleImage(link) {
   }
 
   async function sendDonation(donatorID, recieverID, transferBalance){
+    alert("Starting dono");
     const Token = await ethers.getContractFactory("Token");
     const token = await Token.attach(extensionAddres);
 
@@ -97,6 +98,7 @@ async function getExampleImage(link) {
     var recipientBalance = recipientJSON.attributes[2].value;
     var recipientMaxBalance = recipientJSON.attributes[2].max_value;
 
+    alert("Loaded Metadata");
     // Check the token type of donator and recipient
     if(donatorType == 'Donator' && recipientType == 'Recipient'){
       // Check if donator has sufficient funds to complete the transaction
