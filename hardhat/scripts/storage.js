@@ -5,8 +5,8 @@ const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweD
 var _firstURI;
 var _secondURI;
 
-const coreAddress = '0x40C7a127a1013528b231E561Ed652Ff6A498A503';
-const extensionAddres = '0x55040a233F2B0E4a23718F190f040965dAe05844';
+const coreAddress = '0x396865d35D809dbb90de94ee68655A66aF0f1617';
+const extensionAddres = '0x9bA4Dc35F4Fe3C7cBE77036a23EEaE91f96E5c5B';
 
 
 async function main(){
@@ -131,16 +131,6 @@ async function getExampleImage(link) {
       console.log('Metadata URI: ', metadata.url)
       return metadata.url
     }
-
-
-/*
-  getTokenJson()
-  .then(() => process.exit(0))
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
-*/
 
 
 

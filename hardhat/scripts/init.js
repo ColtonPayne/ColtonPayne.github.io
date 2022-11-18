@@ -4,8 +4,8 @@ const { NFTStorage } = require('nft.storage')
 
 const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDBDNjZDM0Y0N2MyQ0Q0NjY1OEU0ZjdEYTAxNjY1MTBFQTNGY0JGMjAiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY2NzE2Njk0NjgxMCwibmFtZSI6IkNvbHRvbktleSJ9.j5tMZf9UjLq9uo8TAnjoGAFZCeet4l1P4v0mUP9qe0I';
 
-const coreAddress = '0x40C7a127a1013528b231E561Ed652Ff6A498A503';
-const extensionAddres = '0x55040a233F2B0E4a23718F190f040965dAe05844';
+const coreAddress = '0xa79869Fe7d2d6aDc375FF8D0Cf90AcDE81f4AEc1';
+const extensionAddres = '0x2cC2fA572d1c4854E474A2D645371EaD8Cf3dCE8';
 
 // For example's sake, we'll fetch an image from an HTTP URL.
 // In most cases, you'll want to use files provided by a user instead.
