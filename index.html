@@ -22,7 +22,7 @@
             h2.innerHTML = "Your NFTs";
             document.getElementById("nfts").appendChild(document.createElement("h2"))
             // Create a div element for each token you own
-            for (let i = 0; i < tokens.length -1; i++) {
+            for (let i = 1; i < tokens.length; i++) {
                 const img = document.createElement("img");
                 img.src = tokens[i].image;
                 img.height = 200;
@@ -31,6 +31,9 @@
                 const TID = document.createElement("h2");
                 TID.innerHTML = tokens[i].tokenId;
                 document.getElementById("nfts").appendChild(TID);
+                const md = document.createElement("h2");
+                md.innerHTML = tokens[i].metadata.attributes[1].value;
+                document.getElementById("nfts").appendChild(md);
             }
         })
         window.addEventListener('m-unauthenticated', async (event) => {
