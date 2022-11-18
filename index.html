@@ -9,7 +9,7 @@
 
 </head>
 <body>
-
+    <script src="tokenHandler.js" type="text/javascript"></script>
     <script>
         window.addEventListener('m-authenticated', async (event) => {
             // Get the data client instance
@@ -57,11 +57,13 @@
         </nav>
 
         <div class="text-box">
+
             <h1>NFT Showcase</h1>
             <p>Showcase Your NFTs Here</p>
             <div id="nfts"></div>
             <button onclick="sayHi()">Show Alert</button>
-            </div>
+        
+        </div>
 
         <div data-widget="m-connect"
                  data-grant-type="signature"
