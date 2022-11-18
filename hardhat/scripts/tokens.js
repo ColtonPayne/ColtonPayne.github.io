@@ -81,7 +81,6 @@ async function getExampleImage(link) {
   }
 
   async function sendDonation(donatorID, recieverID, transferBalance){
-    alert("Starting dono");
     const Token = await ethers.getContractFactory("Token");
     const token = await Token.attach(extensionAddres);
 
