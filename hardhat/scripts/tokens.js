@@ -1,5 +1,6 @@
 const { NFTStorage } = require('nft.storage')
 
+
 // read the API key from an environment variable. You'll need to set this before running the example!
 const API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDBDNjZDM0Y0N2MyQ0Q0NjY1OEU0ZjdEYTAxNjY1MTBFQTNGY0JGMjAiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY2NzE2Njk0NjgxMCwibmFtZSI6IkNvbHRvbktleSJ9.j5tMZf9UjLq9uo8TAnjoGAFZCeet4l1P4v0mUP9qe0I';
 var _firstURI;
@@ -81,21 +82,26 @@ async function getExampleImage(link) {
   }
 
   async function sendDonation(donatorID, recieverID, transferBalance){
-    const Token = await ethers.getContractFactory("Token");
-    const token = await Token.attach(extensionAddres);
+    try{
+      const Token = await ethers.getContractFactory("Token");
+      const token = await Token.attach(extensionAddres);
+  
+      var recipiantURI = await token.tokenURI(coreAddress, recieverID);
+      var  donatorURI = await token.tokenURI(coreAddress, donatorID);
+  
+      var recipientJSON = await getTokenJson(recipiantURI);
+      var donatorJSON = await getTokenJson(donatorURI);
+  
+      var donatorType = donatorJSON.attributes[1].value;
+      var donationsRemaining = donatorJSON.attributes[2].value;
+  
+      var recipientType = recipientJSON.attributes[1].value;
+      var recipientBalance = recipientJSON.attributes[2].value;
+      var recipientMaxBalance = recipientJSON.attributes[2].max_value;
+    }catch (error){
+      console.error(error)
+    }
 
-    var recipiantURI = await token.tokenURI(coreAddress, recieverID);
-    var  donatorURI = await token.tokenURI(coreAddress, donatorID);
-
-    var recipientJSON = await getTokenJson(recipiantURI);
-    var donatorJSON = await getTokenJson(donatorURI);
-
-    var donatorType = donatorJSON.attributes[1].value;
-    var donationsRemaining = donatorJSON.attributes[2].value;
-
-    var recipientType = recipientJSON.attributes[1].value;
-    var recipientBalance = recipientJSON.attributes[2].value;
-    var recipientMaxBalance = recipientJSON.attributes[2].max_value;
 
     alert("Loaded Metadata");
     // Check the token type of donator and recipient
