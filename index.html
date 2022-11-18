@@ -24,10 +24,7 @@
             document.getElementById("nfts").appendChild(document.createElement("h2"))
             // Create a div element for each token you own
             for (let i = 0; i < tokens.length; i++) {
-                const TID = document.createElement("h2");
-                TID.innerHTML = tokens[i].tokenId;
                 if(tokens[i].tokenId != 3){
-                    document.getElementById("nfts").appendChild(TID);
                     const img = document.createElement("img");
                     var ipfsLink = tokens[i].image;
                     var prefix = 'https';
@@ -63,6 +60,7 @@
             <h1>NFT Showcase</h1>
             <p>Showcase Your NFTs Here</p>
             <div id="nfts"></div>
+            <button onclick="sayHi()">Show Alert</button>
             </div>
 
         <div data-widget="m-connect"
