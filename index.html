@@ -31,9 +31,7 @@
                 const TID = document.createElement("h2");
                 TID.innerHTML = tokens[i].tokenId;
                 document.getElementById("nfts").appendChild(TID);
-                const md = document.createElement("h2");
-                md.innerHTML = tokens[i].metadata.attributes[1].value;
-                document.getElementById("nfts").appendChild(md);
+     
             }
         })
         window.addEventListener('m-unauthenticated', async (event) => {
