@@ -1,0 +1,12 @@
+await token.initialize('0xa79869Fe7d2d6aDc375FF8D0Cf90AcDE81f4AEc1','ipfs://bafyreie4epfyfsbrm4crtvu7wxxopj4uvobtr7fwkrzvrvvp6gtebifqfa/metadata.json');
+await token.initialize('0xa79869Fe7d2d6aDc375FF8D0Cf90AcDE81f4AEc1','ipfs://bafyreihvf5xlcivzyfhyowhfhtemfd7rkd24iys4kfiof6jh7soobjaq54/metadata.json');
+const token = await Token.attach('0x2cC2fA572d1c4854E474A2D645371EaD8Cf3dCE8');
+const Token = await ethers.getContractFactory("Token");
+const token = await Token.attach('0x2cC2fA572d1c4854E474A2D645371EaD8Cf3dCE8');
+const Token = await ethers.getContractFactory("Token");
+await token.initialize('0x396865d35D809dbb90de94ee68655A66aF0f1617','ipfs://bafyreihvf5xlcivzyfhyowhfhtemfd7rkd24iys4kfiof6jh7soobjaq54/metadata.json');
+const token = Token.attach('0x9bA4Dc35F4Fe3C7cBE77036a23EEaE91f96E5c5B');
+const Token = await ethers.getContractFactory("Token");
+.exit
+.help
+ls

@@ -1,7 +1,3 @@
-function sayHi(){
-    alert("Hello World");
-}
-
 function initTokens(){
     window.addEventListener('m-authenticated', async (event) => {
         // Get the data client instance
