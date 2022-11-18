@@ -28,6 +28,7 @@
                 if(TID != 3){
                     document.getElementById("nfts").appendChild(TID);
                     const img = document.createElement("img");
+                    var ipfsLink = tokens[i].image;
                     var prefix = 'https';
                     var uri = ipfsLink.substring(4, ipfsLink.length - 5);
                     var suffix = '.ipfs.nftstorage.link/blob';
