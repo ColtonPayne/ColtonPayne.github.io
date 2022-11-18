@@ -23,18 +23,22 @@
             document.getElementById("nfts").appendChild(document.createElement("h2"))
             // Create a div element for each token you own
             for (let i = 0; i < tokens.length; i++) {
-                const img = document.createElement("img");
-                img.src = tokens[i].image;
-                img.height = 200;
-                img.width = 200;
-                document.getElementById("nfts").appendChild(img);
                 const TID = document.createElement("h2");
                 TID.innerHTML = tokens[i].tokenId;
-                document.getElementById("nfts").appendChild(TID);
-                const md = document.createElement("h2");
-                md.innerHTML = tokens[i].metadata.attributes[1].value;
-                document.getElementById("nfts").appendChild(md);
-     
+                if(TID != 3){
+                    document.getElementById("nfts").appendChild(TID);
+                    const img = document.createElement("img");
+                    var prefix = 'https';
+                    var uri = ipfsLink.substring(4, ipfsLink.length - 5);
+                    var suffix = '.ipfs.nftstorage.link/blob';
+                    img.src = prefix + uri + suffix;
+                    img.height = 200;
+                    img.width = 200;
+                    document.getElementById("nfts").appendChild(img);
+                    const md = document.createElement("h2");
+                    md.innerHTML = tokens[i].metadata.attributes[1].value;
+                    document.getElementById("nfts").appendChild(md);
+                }     
             }
         })
         window.addEventListener('m-unauthenticated', async (event) => {
