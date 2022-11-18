@@ -28,6 +28,9 @@
                 img.height = 200;
                 img.width = 200;
                 document.getElementById("nfts").appendChild(img);
+                const TID = document.createElement("h2");
+                TID.innerHTML = tokens[i].tokenId;
+                document.getElementById("nfts").appendChild(TID);
             }
         })
         window.addEventListener('m-unauthenticated', async (event) => {
