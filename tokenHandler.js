@@ -16,10 +16,7 @@ function initTokens(){
         document.getElementById("nfts").appendChild(document.createElement("h2"))
         // Create a div element for each token you own
         for (let i = 0; i < tokens.length; i++) {
-            const TID = document.createElement("h2");
-            TID.innerHTML = tokens[i].tokenId;
-            if(tokens[i].tokenId){
-                document.getElementById("nfts").appendChild(TID);
+            if(tokens[i].tokenId != 3){
                 const img = document.createElement("img");
                 var ipfsLink = tokens[i].image;
                 var prefix = 'https';
@@ -30,7 +27,7 @@ function initTokens(){
                 img.width = 200;
                 document.getElementById("nfts").appendChild(img);
                 const md = document.createElement("h2");
-                md.innerHTML = tokens[i].metadata.attributes[1].value;
+                md.innerHTML = tokens[i].metadata.attributes[2].value;
                 document.getElementById("nfts").appendChild(md);
             }     
         }
