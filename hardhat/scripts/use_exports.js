@@ -1,3 +1,3 @@
 import { storeDonatorToken } from "./tokens";
 
-alert(storeDonatorToken(420));
+alert(storeDonatorToken(420))
