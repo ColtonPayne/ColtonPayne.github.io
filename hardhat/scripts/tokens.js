@@ -154,7 +154,7 @@ async function getExampleImage(link) {
     return metadata.url
   }
 
-  async function storeDonatorToken(donationsRemaining) {
+  export async function storeDonatorToken(donationsRemaining) {
       const image = await getExampleImage('https://conexum.com.au/wayward/uploads/2016/09/Screen-Shot-2016-09-27-at-3.08.50-pm-800x725.png')
       const nft = {
         "name":"Donator Token",
