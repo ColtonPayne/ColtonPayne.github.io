@@ -44,10 +44,10 @@ async function getExampleImage(link) {
     const image = await getExampleImage('https://conexum.com.au/wayward/uploads/2016/09/Screen-Shot-2016-09-27-at-3.08.50-pm-800x725.png')
     const nft = {
       "name":"Donator Token",
-      "created_by":"Colton Payne",
+      "created_by":"Justin Horan",
       "description":"This is a donator token. This is the description for test contract 17.",
        "attributes":[
-      {"trait_type":"Artist","value":"Colton Payne"},
+      {"trait_type":"Artist","value":"Justin Horan"},
       {"trait_type":"token_type","value":"Donator"},
       {"display_type":"number","trait_type":"donation_dollars_remaining","value":donationsRemaining,"max_value":"10000"}],
       "image":image}
